@@ -1,0 +1,41 @@
+<ion-header class="">
+  <ion-toolbar>
+
+  <ion-title>مختبري My laboratory</ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only color="royal" (click)="showAlert()">
+      <ion-icon name="information-circle"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding class="bg-color card-background-page" >
+ <p>
+  <ion-card>
+    <img src="../../assets/imgs/logo2.png"/>
+
+  </ion-card>
+
+</p>
+
+
+
+
+
+
+
+  <p>
+    <button ion-button color="primary" full  (click)="GoToFirst()" round> المرحلة الابتدائية</button>
+  </p>
+  <p>
+    <button ion-button color="second" full  (click)="GoToSecond()" round>المرحلة المتوسطة</button>
+  </p>
+
+  <p>
+    <button ion-button color="third" full  (click)="GoToThird()" round>المرحلة الثانوية</button>
+  </p>
+
+
+</ion-content>

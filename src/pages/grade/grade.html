@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>قائمة التجارب</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="loading" *ngIf="videos && videos.length === 0">
+    <p>Videos are downloading...</p>
+    <ion-spinner></ion-spinner>
+  </div>
+
+  <div class="videos" *ngIf="videos && videos.length > 0">
+    <video-play *ngFor="let video of videos" [video]="video"></video-play>
+  </div>
+
+</ion-content>
